@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>RegisterUser</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>com.register.web.RegisterUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/RegisterUser</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>listusers</servlet-name>
+        <servlet-class>com.register.web.ListUsers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>listusers</servlet-name>
+        <url-pattern>/ListUsers</url-pattern>
+    </servlet-mapping>
+</web-app>
