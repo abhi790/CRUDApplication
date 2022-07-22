@@ -8,7 +8,7 @@
 <style>
 	.main{
 	     background-color:Cyan; 
-	     font-weight:bold
+	     font-weight:bold;
 	}
 	
 	.input{
@@ -19,15 +19,15 @@
 		 background-color:Lime;
 		 font-weight:bold;
 	}
-	
+
 </style>
 </head>
 <body>
 	<div align="center">
 		<h1>User Registration Form</h1>
-		<div align="center" >
+		<div align="center" class="form_boundry">
 		<form action="RegisterUser" method="post" >
-		<table border="1" >
+		<table border="1" style="background-color:Maroon;">
 			<tr>
 				<td class="main">ID:</td>
 				<td ><input class="input" type="text" placeholder="Input Id" name="id"/>

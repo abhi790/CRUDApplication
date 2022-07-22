@@ -48,12 +48,13 @@
 			</tr>
 		
 		<%
-		ResultSet rs = null;
-		Class.forName("com.mysql.jdbc.Driver");
+		/* Class.forName("com.mysql.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/UserManagement","root","Abhimanyu@97");
 		String query = "select * from users";
-		Statement st = 	con.createStatement();
-		rs = st.executeQuery(query);
+		Statement st = 	con.createStatement(); */
+		//2nd way to implement		
+		UserDao userDao = new UserDao();
+		ResultSet rs = userDao.selectAll();
 		
 		while(rs.next())
 		{

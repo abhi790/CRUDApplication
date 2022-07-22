@@ -40,8 +40,7 @@ public class UserDao {
 		Connection con = connectWithDB();
 		Statement st = con.createStatement();
 		rs = st.executeQuery(SELECT);
-		return rs;
-		
+		return rs;	
 	}
 
 }
